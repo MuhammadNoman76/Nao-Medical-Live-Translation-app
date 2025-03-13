@@ -37,7 +37,8 @@ function SpeechTranscription() {
   const synthRef = useRef(null);
   const lastTranslatedTextRef = useRef("");
 
-  const API_KEY = "AIzaSyAP9NLg9hX3jsaU2YyzI2iK9MEqIm_64hg";
+  // Use the environment variable for the API key
+  const API_KEY = import.meta.env.VITE_API_KEY;
 
   useEffect(() => {
     const initializeSpeechServices = () => {
