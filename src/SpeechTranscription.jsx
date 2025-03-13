@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import "./SpeechTranscription.css";
 
 const languages = [
   { label: "English", value: "en-US" },
